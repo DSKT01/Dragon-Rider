@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{E14220BA-92FE-86FB-D177-B18E8C902922}") = "Dragon's Rider", "Assembly-CSharp.csproj", "{D552B3BE-99AF-305C-08B3-38B6B1F7D156}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D552B3BE-99AF-305C-08B3-38B6B1F7D156}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D552B3BE-99AF-305C-08B3-38B6B1F7D156}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D552B3BE-99AF-305C-08B3-38B6B1F7D156}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D552B3BE-99AF-305C-08B3-38B6B1F7D156}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
