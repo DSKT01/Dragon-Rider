@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Camara.cs" />
      <Compile Include="Assets\Scripts\Genera.cs" />
+     <Compile Include="Assets\Scripts\Montarse.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\Obstaculo.cs" />
      <Compile Include="Assets\Scripts\Obstaculos.cs" />
