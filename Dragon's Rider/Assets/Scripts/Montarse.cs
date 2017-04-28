@@ -2,14 +2,18 @@
 using System.Collections;
 
 public class Montarse : MonoBehaviour {
-    public GameObject Roberto;
-    public GameObject Dragon;
-    public Collider2D  RobertoC;
-    public Collider2D  DragonC;
+
+
+    public bool Montado = false;
+
+
+
+    
+    public Collider2D  powerup;
     public LayerMask PowerUp;
-    private bool Colision;
-    private float segInc = 0;
-    private float segFn = 3;
+    public bool Colision = false;
+   
+   
     // Use this for initialization
     void Start () {
 	
@@ -17,21 +21,12 @@ public class Montarse : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Colision = Physics2D.IsTouchingLayers(RobertoC, PowerUp);
+        Colision = Physics2D.IsTouchingLayers(powerup, PowerUp);
         if (Colision)
         {
-            Roberto.SetActive(false);
-            Dragon.SetActive(true);
+            Montado = true;
         }
-        while (Dragon.activeInHierarchy)
-        {
-            segInc += Time.deltaTime;
-            if (segInc >= segFn)
-            {
-                Roberto.SetActive(true);
-                Dragon.SetActive(false);
-            }
-        }
+        
 
     }
 }

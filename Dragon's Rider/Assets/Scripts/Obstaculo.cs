@@ -16,6 +16,7 @@ public class Obstaculo : MonoBehaviour {
         {
             Destroy(this.gameObject, 0);
            
+           
 
         }
     }

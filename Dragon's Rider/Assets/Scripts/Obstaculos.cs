@@ -4,16 +4,14 @@ using System.Collections;
 public class Obstaculos : MonoBehaviour {
 
     private int Desde = 1;
-    public int Probabilidad;
+    public float Probabilidad;
     private int Tiempo;
     public GameObject Obstacle;
     public Transform PuntoGenerador;
     private bool SePuede = false;
-    
-    
+    private int prob;
     private float segInc = 0;
     private float segFn = 1;
-   
     private bool condicion2 = false;
    
  
@@ -24,6 +22,7 @@ public class Obstaculos : MonoBehaviour {
     void Start () {
 
         Tiempo = 0;
+        
        
     }
 	
@@ -31,8 +30,17 @@ public class Obstaculos : MonoBehaviour {
 	void Update () {
 
         //Debug.Log(Tiempo);
-        Tiempo = Random.Range(Desde, Probabilidad);
+        prob = (int)Probabilidad;
+        Tiempo = Random.Range(Desde, prob);
         segInc += Time.deltaTime;
+        if (!(Probabilidad <= 1))
+        {
+            Probabilidad -= Time.deltaTime;
+        }
+        else
+        {
+            Probabilidad = 1;
+        }
 
         if (Tiempo == 1)
         {
@@ -59,16 +67,5 @@ public class Obstaculos : MonoBehaviour {
 
             }
         }
-            
-             
-            
-           
-        
-
     }
-
-
-
-
-
 }

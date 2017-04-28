@@ -8,19 +8,21 @@ public class Camara : MonoBehaviour {
     private float AMover;
 
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         Jugador = FindObjectOfType<Movement>();
         UltimaPosicion = Jugador.transform.position;
 
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
         AMover = Jugador.transform.position.x - UltimaPosicion.x;
-        transform.position = new Vector3(transform.position.x + AMover, transform.position.y, transform.position.z); 
+        transform.position = new Vector3(transform.position.x + AMover, transform.position.y, transform.position.z);
 
 
         UltimaPosicion = Jugador.transform.position;
-	}
+    }
 }
