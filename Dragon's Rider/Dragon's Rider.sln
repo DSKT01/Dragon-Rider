@@ -1,7 +1,7 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{E14220BA-92FE-86FB-D177-B18E8C902922}") = "Dragon's Rider", "Assembly-CSharp.csproj", "{D552B3BE-99AF-305C-08B3-38B6B1F7D156}"
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragon's Rider", "Assembly-CSharp.csproj", "{D552B3BE-99AF-305C-08B3-38B6B1F7D156}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

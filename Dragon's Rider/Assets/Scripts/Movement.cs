@@ -30,7 +30,7 @@ public class Movement : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        velocidad += Time.deltaTime / 100;
+        velocidad += Time.deltaTime ;
         if (Roberto.activeInHierarchy)
         {
             EnSuelo = Physics2D.IsTouchingLayers(Colision, QueEsSuelo);

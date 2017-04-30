@@ -5,13 +5,13 @@ public class Genera : MonoBehaviour
 {
 
     public Transform PuntoGenerador;
-    private float EspacioEntre;
+    public float EspacioEntre;
 
     // Use this for initialization
     void Start()
     {
 
-        EspacioEntre = 2100;
+        
     }
 
     // Update is called once per frame

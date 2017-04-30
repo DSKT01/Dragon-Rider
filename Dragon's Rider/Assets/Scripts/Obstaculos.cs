@@ -11,6 +11,7 @@ public class Obstaculos : MonoBehaviour {
     private bool SePuede = false;
     private int prob;
     private float segInc = 0;
+    [SerializeField]
     private float segFn = 1;
     private bool condicion2 = false;
    
