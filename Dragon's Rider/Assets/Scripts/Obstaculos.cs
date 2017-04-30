@@ -12,8 +12,10 @@ public class Obstaculos : MonoBehaviour {
     private int prob;
     private float segInc = 0;
     [SerializeField]
-    private float segFn = 1;
+    private float segFn;
     private bool condicion2 = false;
+    public int TI;
+    private float T = 0;
    
  
     
@@ -26,46 +28,51 @@ public class Obstaculos : MonoBehaviour {
         
        
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
 
         //Debug.Log(Tiempo);
-        prob = (int)Probabilidad;
-        Tiempo = Random.Range(Desde, prob);
-        segInc += Time.deltaTime;
-        if (!(Probabilidad <= 1))
+        T += Time.deltaTime;
+        if (T > TI)
         {
-            Probabilidad -= Time.deltaTime;
-        }
-        else
-        {
-            Probabilidad = 1;
-        }
+            prob = (int)Probabilidad;
+            Tiempo = Random.Range(Desde, prob);
+            segInc += Time.deltaTime;
+            if (!(Probabilidad <= 1))
+            {
+                Probabilidad -= Time.deltaTime;
+            }
+            else
+            {
+                Probabilidad = 1;
+            }
 
-        if (Tiempo == 1)
-        {
-            SePuede = true;
-        }
-        if (segInc >= segFn)
-        {
-            condicion2 = true;
-        }
+            if (Tiempo == 1)
+            {
+                SePuede = true;
+            }
+            if (segInc >= segFn)
+            {
+                condicion2 = true;
+            }
 
 
 
-        if (SePuede)
-        {
-
-            if (condicion2)
+            if (SePuede)
             {
 
-                
-                Instantiate(Obstacle, PuntoGenerador.position, PuntoGenerador.rotation);
-                SePuede = false;
-                segInc = 0;
-                condicion2 = false;
+                if (condicion2)
+                {
 
+
+                    Instantiate(Obstacle, PuntoGenerador.position, PuntoGenerador.rotation);
+                    SePuede = false;
+                    segInc = 0;
+                    condicion2 = false;
+
+                }
             }
         }
     }

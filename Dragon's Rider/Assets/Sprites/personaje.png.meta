@@ -1,0 +1,482 @@
+fileFormatVersion: 2
+guid: 25b8d4526e2a1aa46a351a0a16adbd62
+timeCreated: 1493592694
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: correr1
+    21300002: correr2
+    21300004: correr3
+    21300006: correr4
+    21300008: correr5
+    21300010: correr6
+    21300012: correr7
+    21300014: saltar5.1
+    21300016: saltar4.1
+    21300018: saltar1.1
+    21300020: saltar2.1
+    21300022: saltar3.1
+    21300024: agacharse1.1
+    21300026: agacharse2.1
+    21300028: agacharse3.1
+    21300030: agacharse4.1
+    21300032: arrastrar3
+    21300034: agacharse11.1
+    21300036: agacharse13.1
+    21300038: agacahrse13.1
+    21300040: correr8
+    21300042: correr9
+    21300044: correr2.1
+    21300046: agacharse5.1
+    21300048: arrastrar2
+    21300050: arrastrar4
+    21300052: arrastrar1
+    21300054: agacharse10.1
+    21300056: agacharse12.1
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 0.8
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: correr1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 259
+        width: 49
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: correr2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 129
+        width: 60
+        height: 127
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 1, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: correr3
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 127
+        width: 63
+        height: 131
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 4}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: correr4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 65
+        height: 125
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: correr5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 0
+        width: 56
+        height: 125
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: correr6
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 128
+        width: 63
+        height: 127
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: correr7
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 0
+        width: 67
+        height: 124
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: saltar5.1
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 129
+        width: 61
+        height: 117
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: saltar4.1
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 10
+        width: 62
+        height: 113
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: saltar1.1
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 129
+        width: 62
+        height: 97
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: saltar2.1
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 160
+        width: 60
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: saltar3.1
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 16
+        width: 62
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: agacharse1.1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 650
+        width: 57
+        height: 124
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 4, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: agacharse2.1
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 650
+        width: 83
+        height: 119
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 6, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: agacharse3.1
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 648
+        width: 102
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: agacharse4.1
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 520
+        width: 126
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: arrastrar3
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 649
+        width: 116
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: agacharse11.1
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 649
+        width: 118
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: agacharse13.1
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 518
+        width: 63
+        height: 101
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: agacahrse13.1
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 649
+        width: 57
+        height: 119
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: correr8
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 261
+        width: 68
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: correr9
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 260
+        width: 55
+        height: 124
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: correr2.1
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 260
+        width: 49
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 2}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: agacharse5.1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 387
+        width: 122
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 4, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: arrastrar2
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 391
+        width: 117
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: arrastrar4
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 388
+        width: 117
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 5}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: arrastrar1
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 520
+        width: 115
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 16}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: agacharse10.1
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 519
+        width: 122
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: agacharse12.1
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 391
+        width: 103
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
