@@ -16,6 +16,7 @@ public class Obstaculos : MonoBehaviour {
     private bool condicion2 = false;
     public int TI;
     private float T = 0;
+    public int Z;
    
  
     
@@ -40,13 +41,13 @@ public class Obstaculos : MonoBehaviour {
             prob = (int)Probabilidad;
             Tiempo = Random.Range(Desde, prob);
             segInc += Time.deltaTime;
-            if (!(Probabilidad <= 1))
+            if (!(Probabilidad <= Z))
             {
-                Probabilidad -= Time.deltaTime;
+                Probabilidad -= Time.deltaTime/Z;
             }
             else
             {
-                Probabilidad = 1;
+                Probabilidad = Z;
             }
 
             if (Tiempo == 1)

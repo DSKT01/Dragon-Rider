@@ -4,7 +4,8 @@ using System.Collections;
 
 
 
-public class Movement : MonoBehaviour {
+public class Movement : MonoBehaviour
+{
     public GameObject Roberto;
     //public GameObject Dragon;
     public float velocidad;
@@ -17,9 +18,13 @@ public class Movement : MonoBehaviour {
     public Montarse VEL;
     [SerializeField]
     private float Save;
-    
-    
-   //public float Jump;
+    private bool Abajo;
+    private Animator Animar;
+    private float W = 1.350f;
+    public LayerMask Muerte;
+    public bool Muere = false;
+   
+    //public float Jump;
     //public Rigidbody2D Body;
     //public float YMin;
     //public float YMax;
@@ -28,14 +33,17 @@ public class Movement : MonoBehaviour {
 
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         Save = velocidad;
-	}
+        Animar = GetComponent<Animator>();
+    }
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
 
-        if (VEL.control > 0 && VEL.control < VEL.TA )
+        if (VEL.control > 0 && VEL.control <= VEL.TA + 1)
         {
             velocidad = 0;
         }
@@ -47,34 +55,77 @@ public class Movement : MonoBehaviour {
         {
             CS = 1;
         }
-        velocidad += Time.deltaTime ;
+        velocidad += Time.deltaTime;
         Save += Time.deltaTime;
         if (Roberto.activeInHierarchy)
         {
             EnSuelo = Physics2D.IsTouchingLayers(Colision, QueEsSuelo);
 
             Cuerpo.velocity = new Vector2(velocidad, Cuerpo.velocity.y);
-            
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Abajo == false)
             {
-                if (CS > 0)
+                if (Input.GetKeyDown(KeyCode.UpArrow))
                 {
-                    Cuerpo.velocity = new Vector2(Cuerpo.velocity.x, FSalto);
-                    CS--;
+                    if (CS > 0)
+                    {
+                        Cuerpo.velocity = new Vector2(Cuerpo.velocity.x, FSalto);
+                        CS--;
+                    }
                 }
             }
-        }
-        /*if (Dragon.activeInHierarchy)
-        {
-            Body.velocity = new Vector2(velocidad, Body.velocity.y);
-            if (Input.GetKey(KeyCode.Space))
+
+            if (Abajo == false)
             {
-                Body.velocity = new Vector2(Body.velocity.x, Jump);
+                W = 1.350f;
+                if (Input.GetKeyDown(KeyCode.DownArrow))
+                {
+                    Abajo = true;
+
+                }
+            }
+            if (Abajo == true)
+            {
+                W -= Time.deltaTime;
+                if (W < 0)
+                {
+                    Abajo = false;
+                }
             }
 
-            transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, YMin, YMax), transform.position.z);
-        }*/
 
-       
-	}
+            Animar.SetFloat("velocidad", Cuerpo.velocity.x);
+            Animar.SetBool("EnSuelo", EnSuelo);
+            Animar.SetBool("Agacha", Abajo);
+        }
+        Muere = Physics2D.IsTouchingLayers(Colision, Muerte);
+
+    }
 }
+
+        
+      
+
+
+
+
+ 
+
+
+
+
+
+         /*if (Dragon.activeInHierarchy)
+         {
+             Body.velocity = new Vector2(velocidad, Body.velocity.y);
+             if (Input.GetKey(KeyCode.Space))
+             {
+                 Body.velocity = new Vector2(Body.velocity.x, Jump);
+             }
+
+             transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, YMin, YMax), transform.position.z);
+         }*/
+
+
+
+    
+   

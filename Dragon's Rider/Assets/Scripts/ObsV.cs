@@ -5,6 +5,7 @@ using UnityEngine;
 public class ObsV : MonoBehaviour {
     public Rigidbody2D Cuerpo;
     public float velocidad;
+
     // Use this for initialization
     void Start () {
         

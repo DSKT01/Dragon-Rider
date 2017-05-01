@@ -3,18 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DeletePowerup : MonoBehaviour {
-    public Montarse mon;
-	// Use this for initialization
-	void Start () {
+
+
+
+    public Collider2D J;
+    public Transform PuntoFinal;
+   
+    
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-        if (mon.Montado == true)
+
+        
+       
+
+
+        if (transform.position.x < PuntoFinal.position.x)
         {
             Destroy(this.gameObject, 0);
+
+
+
         }
-	}
+    }
+   
 }
