@@ -17,6 +17,7 @@ public class Obstaculos : MonoBehaviour {
     public int TI;
     private float T = 0;
     public int Z;
+    public Transform inicial;
    
  
     
@@ -26,6 +27,7 @@ public class Obstaculos : MonoBehaviour {
     void Start () {
 
         Tiempo = 0;
+        
         
        
     }
@@ -68,7 +70,7 @@ public class Obstaculos : MonoBehaviour {
                 {
 
 
-                    Instantiate(Obstacle, PuntoGenerador.position, PuntoGenerador.rotation);
+                    Instantiate(Obstacle, new Vector3(PuntoGenerador.position.x, PuntoGenerador.position.y, inicial.position.z), PuntoGenerador.rotation);
                     SePuede = false;
                     segInc = 0;
                     condicion2 = false;

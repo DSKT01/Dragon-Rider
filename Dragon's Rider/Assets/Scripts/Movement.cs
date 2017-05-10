@@ -16,14 +16,15 @@ public class Movement : MonoBehaviour
     public Collider2D Colision;
     private int CS = 1;
     public Montarse VEL;
-    [SerializeField]
+    public Puntuacion puntos;
+    
     private float Save;
     private bool Abajo;
     private Animator Animar;
     private float W = 1.350f;
     public LayerMask Muerte;
     public bool Muere = false;
-   
+    private float save2;
     //public float Jump;
     //public Rigidbody2D Body;
     //public float YMin;
@@ -36,6 +37,7 @@ public class Movement : MonoBehaviour
     void Start()
     {
         Save = velocidad;
+        save2 = FSalto;
         Animar = GetComponent<Animator>();
     }
 
@@ -46,10 +48,12 @@ public class Movement : MonoBehaviour
         if (VEL.control > 0 && VEL.control <= VEL.TA + 1)
         {
             velocidad = 0;
+            FSalto = 0;
         }
         else
         {
             velocidad = Save;
+            FSalto = save2;
         }
         if (EnSuelo)
         {
@@ -64,7 +68,7 @@ public class Movement : MonoBehaviour
             Cuerpo.velocity = new Vector2(velocidad, Cuerpo.velocity.y);
             if (Abajo == false)
             {
-                if (Input.GetKeyDown(KeyCode.UpArrow))
+                if (Input.GetKeyDown(KeyCode.W))
                 {
                     if (CS > 0)
                     {
@@ -77,7 +81,7 @@ public class Movement : MonoBehaviour
             if (Abajo == false)
             {
                 W = 1.350f;
-                if (Input.GetKeyDown(KeyCode.DownArrow))
+                if (Input.GetKeyDown(KeyCode.S))
                 {
                     Abajo = true;
 

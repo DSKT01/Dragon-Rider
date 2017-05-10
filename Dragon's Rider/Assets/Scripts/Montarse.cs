@@ -13,21 +13,17 @@ public class Montarse : MonoBehaviour {
     public int TA;
     public Transform ED;
     public Transform EP;
-    
     private int Cont2;
     public Transform PuntoDC;
     public float control2 = 10;
-    
     private int Cont22;
-    
     private float DisR = 0;
-    
     private float Dis = 0;
     public bool Points = false;
     public Transform PA;
     public Transform PB;
-   
-    
+
+
     // Use this for initialization
     void Start()
     {
@@ -42,28 +38,17 @@ public class Montarse : MonoBehaviour {
         {
             Montado = true;
         }
-       
-       
-
-
         if (Montado)
         {
-
             control += Time.deltaTime;
             Cont2 = (int)control;
             control2 = 0;
-
-
-
-
+            PuntoDC.position = new Vector3(PA.position.x, PuntoDC.position.y, PuntoDC.position.z);
             if (Cont2 == TA)
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y, ED.position.z);
-                PuntoDC.position = new Vector3(PA.position.x, PuntoDC.position.y, PuntoDC.position.z);
                 Dis = 100;
                 Points = true;
-               
-
             }
             if (Cont2 > TA)
             {
@@ -87,16 +72,15 @@ public class Montarse : MonoBehaviour {
                 transform.position = new Vector3(transform.position.x, transform.position.y, EP.position.z);
                 PuntoDC.position = new Vector3(PB.position.x, PuntoDC.position.y, PuntoDC.position.z);
                 Points = false;
-                
             }
         }
         if (Dis < 0)
         {
             Montado = false;
         }
-
-
-
-
     }
+
+
+
+
 }

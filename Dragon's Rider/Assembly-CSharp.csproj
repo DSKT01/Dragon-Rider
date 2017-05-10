@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Camara.cs" />
+     <Compile Include="Assets\Scripts\Canvas.cs" />
      <Compile Include="Assets\Scripts\DeletePowerup.cs" />
      <Compile Include="Assets\Scripts\Genera.cs" />
      <Compile Include="Assets\Scripts\Montarse.cs" />

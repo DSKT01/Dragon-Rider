@@ -4,23 +4,22 @@ using UnityEngine;
 
 public class menú : MonoBehaviour {
 
-    public string Escena1;
-    public string Escena2;
-    public string Escena;
-    public Movement Muere;
-    public string Escena3;
+    public string juego;
+    public string creditos;
+    public string menu;
+ 
 
     public void Jugar()
     {
-        Application.LoadLevel(Escena1);
+        Application.LoadLevel(juego);
     }
     public void Opciones ()
     {
-        Application.LoadLevel(Escena2);
+        Application.LoadLevel(creditos);
     }
     public void Volver ()
     {
-        Application.LoadLevel(Escena);
+        Application.LoadLevel(menu);
     }
     public void Salir ()
     {
@@ -28,13 +27,7 @@ public class menú : MonoBehaviour {
 
     }
      
-    public void Muerto()
-    {
-        if (Muere.Muere)
-        {
-            Application.LoadLevel(Escena3);
-        }
-    }
+   
 
 }
 
