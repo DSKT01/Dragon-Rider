@@ -67,7 +67,7 @@ public class Montarse : MonoBehaviour {
             control = 0;
             control2 += Time.deltaTime;
             Cont22 = (int)control2;
-            if (Cont22 == TA)
+            if (Cont22 == 1)
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y, EP.position.z);
                 PuntoDC.position = new Vector3(PB.position.x, PuntoDC.position.y, PuntoDC.position.z);
