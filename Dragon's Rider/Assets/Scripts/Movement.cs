@@ -44,65 +44,69 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Muere = Physics2D.IsTouchingLayers(Colision, Muerte);
+        if (Muere == false)
+        {
 
-        if (VEL.control > 0 && VEL.control <= VEL.TA + 1)
-        {
-            velocidad = 0;
-            FSalto = 0;
-        }
-        else
-        {
-            velocidad = Save;
-            FSalto = save2;
-        }
-        if (EnSuelo)
-        {
-            CS = 1;
-        }
-        velocidad += Time.deltaTime;
-        Save += Time.deltaTime;
-        if (Roberto.activeInHierarchy)
-        {
-            EnSuelo = Physics2D.IsTouchingLayers(Colision, QueEsSuelo);
 
-            Cuerpo.velocity = new Vector2(velocidad, Cuerpo.velocity.y);
-            if (Abajo == false)
+            if (VEL.control > 0 && VEL.control <= VEL.TA + 1)
             {
-                if (Input.GetKeyDown(KeyCode.W))
+                velocidad = 0;
+                FSalto = 0;
+            }
+            else
+            {
+                velocidad = Save;
+                FSalto = save2;
+            }
+            if (EnSuelo)
+            {
+                CS = 1;
+            }
+            velocidad += Time.deltaTime;
+            Save += Time.deltaTime;
+            if (Roberto.activeInHierarchy)
+            {
+                EnSuelo = Physics2D.IsTouchingLayers(Colision, QueEsSuelo);
+
+                Cuerpo.velocity = new Vector2(velocidad, Cuerpo.velocity.y);
+                if (Abajo == false)
                 {
-                    if (CS > 0)
+                    if (Input.GetKeyDown(KeyCode.W))
                     {
-                        Cuerpo.velocity = new Vector2(Cuerpo.velocity.x, FSalto);
-                        CS--;
+                        if (CS > 0)
+                        {
+                            Cuerpo.velocity = new Vector2(Cuerpo.velocity.x, FSalto);
+                            CS--;
+                        }
                     }
                 }
-            }
 
-            if (Abajo == false)
-            {
-                W = 1.350f;
-                if (Input.GetKeyDown(KeyCode.S))
+                if (Abajo == false)
                 {
-                    Abajo = true;
+                    W = 1.350f;
+                    if (Input.GetKeyDown(KeyCode.S))
+                    {
+                        Abajo = true;
 
+                    }
                 }
-            }
-            if (Abajo == true)
-            {
-                W -= Time.deltaTime;
-                if (W < 0)
+                if (Abajo == true)
                 {
-                    Abajo = false;
+                    W -= Time.deltaTime;
+                    if (W < 0)
+                    {
+                        Abajo = false;
+                    }
                 }
+
+
+                Animar.SetFloat("velocidad", Cuerpo.velocity.x);
+                Animar.SetBool("EnSuelo", EnSuelo);
+                Animar.SetBool("Agacha", Abajo);
             }
 
-
-            Animar.SetFloat("velocidad", Cuerpo.velocity.x);
-            Animar.SetBool("EnSuelo", EnSuelo);
-            Animar.SetBool("Agacha", Abajo);
         }
-        Muere = Physics2D.IsTouchingLayers(Colision, Muerte);
-
     }
 }
 
