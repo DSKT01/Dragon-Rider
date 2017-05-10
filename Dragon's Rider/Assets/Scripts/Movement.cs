@@ -17,6 +17,7 @@ public class Movement : MonoBehaviour
     private int CS = 1;
     public Montarse VEL;
     public Puntuacion puntos;
+    public LayerMask Jugador;
     
     private float Save;
     private bool Abajo;
@@ -44,7 +45,15 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Muere = Physics2D.IsTouchingLayers(Colision, Muerte);
+       
+        if (Physics2D.IsTouchingLayers(Colision,Muerte))
+        {
+            Jugador = Muerte;
+        }
+        if (Jugador==Muerte)
+        {
+            Muere = true;
+        }
         if (Muere == false)
         {
 
@@ -106,6 +115,10 @@ public class Movement : MonoBehaviour
                 Animar.SetBool("Agacha", Abajo);
             }
 
+        }
+        else
+        {
+            Roberto.gameObject.SetActive(false);
         }
     }
 }

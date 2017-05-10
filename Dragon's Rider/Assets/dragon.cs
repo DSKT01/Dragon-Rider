@@ -14,8 +14,8 @@ public class dragon : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         Animar = GetComponent<Animator>();
-        control = 1.1f;
-        control2 = 0.52f;
+        control = 5.01f;
+        
     }
 	
 	// Update is called once per frame
@@ -28,19 +28,13 @@ public class dragon : MonoBehaviour {
         if (tiempo > control)
         {
             listo = true;
+            tiempo = 0;
         }
 
-        if (sino.Montado == false)
-        {
-            tiempo2 += Time.deltaTime;
-        }
-        if (tiempo2 > control2)
-        {
-            listo = false;
-        }
-        Animar.SetBool("montado2", sino.Montado);
-        Animar.SetBool("listo", listo);
+        
+
+        Animar.SetBool("montado", listo);
+        
        
-
     }
 }

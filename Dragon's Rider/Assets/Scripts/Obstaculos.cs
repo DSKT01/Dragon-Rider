@@ -18,6 +18,7 @@ public class Obstaculos : MonoBehaviour {
     private float T = 0;
     public int Z;
     public Transform inicial;
+    public Movement Muerte;
    
  
     
@@ -35,46 +36,48 @@ public class Obstaculos : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-
-        //Debug.Log(Tiempo);
-        T += Time.deltaTime;
-        if (T > TI)
+        if (Muerte.Muere == false)
         {
-            prob = (int)Probabilidad;
-            Tiempo = Random.Range(Desde, prob);
-            segInc += Time.deltaTime;
-            if (!(Probabilidad <= Z))
+            //Debug.Log(Tiempo);
+            T += Time.deltaTime;
+            if (T > TI)
             {
-                Probabilidad -= Time.deltaTime/Z;
-            }
-            else
-            {
-                Probabilidad = Z;
-            }
+                prob = (int)Probabilidad;
+                Tiempo = Random.Range(Desde, prob);
+                segInc += Time.deltaTime;
+                if (!(Probabilidad <= Z))
+                {
+                    Probabilidad -= Time.deltaTime / Z;
+                }
+                else
+                {
+                    Probabilidad = Z;
+                }
 
-            if (Tiempo == 1)
-            {
-                SePuede = true;
-            }
-            if (segInc >= segFn)
-            {
-                condicion2 = true;
-            }
+                if (Tiempo == 1)
+                {
+                    SePuede = true;
+                }
+                if (segInc >= segFn)
+                {
+                    condicion2 = true;
+                }
 
 
 
-            if (SePuede)
-            {
-
-                if (condicion2)
+                if (SePuede)
                 {
 
+                    if (condicion2)
+                    {
 
-                    Instantiate(Obstacle, new Vector3(PuntoGenerador.position.x, PuntoGenerador.position.y, inicial.position.z), PuntoGenerador.rotation);
-                    SePuede = false;
-                    segInc = 0;
-                    condicion2 = false;
 
+                        Instantiate(Obstacle, new Vector3(PuntoGenerador.position.x, PuntoGenerador.position.y, inicial.position.z), PuntoGenerador.rotation);
+                        SePuede = false;
+                        segInc = 0;
+                        condicion2 = false;
+
+                    }
                 }
             }
         }

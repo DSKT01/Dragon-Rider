@@ -1,0 +1,41 @@
+Initialize engine version: 5.5.1f1 (88d00a7498cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon(TM) R6 Graphics (ID=0x9874)
+    Vendor:   ATI
+    VRAM:     3055 MB
+    Driver:   21.19.137.514
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\usuario\Documents\Bolivariana\2017\dragon's rider\Dragon-Rider\Dragon's Rider\Dragon's Rider_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\usuario\Documents\Bolivariana\2017\dragon's rider\Dragon-Rider\Dragon's Rider\Dragon's Rider_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\usuario\Documents\Bolivariana\2017\dragon's rider\Dragon-Rider\Dragon's Rider\Dragon's Rider_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\usuario\Documents\Bolivariana\2017\dragon's rider\Dragon-Rider\Dragon's Rider\Dragon's Rider_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\usuario\Documents\Bolivariana\2017\dragon's rider\Dragon-Rider\Dragon's Rider\Dragon's Rider_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\usuario\Documents\Bolivariana\2017\dragon's rider\Dragon-Rider\Dragon's Rider\Dragon's Rider_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\usuario\Documents\Bolivariana\2017\dragon's rider\Dragon-Rider\Dragon's Rider\Dragon's Rider_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\usuario\Documents\Bolivariana\2017\dragon's rider\Dragon-Rider\Dragon's Rider\Dragon's Rider_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\usuario\Documents\Bolivariana\2017\dragon's rider\Dragon-Rider\Dragon's Rider\Dragon's Rider_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\usuario\Documents\Bolivariana\2017\dragon's rider\Dragon-Rider\Dragon's Rider\Dragon's Rider_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.134 seconds
+Platform assembly: C:\Users\usuario\Documents\Bolivariana\2017\dragon's rider\Dragon-Rider\Dragon's Rider\Dragon's Rider_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\usuario\Documents\Bolivariana\2017\dragon's rider\Dragon-Rider\Dragon's Rider\Dragon's Rider_Data\Managed\System.dll (this message is harmless)
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 7.467003 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 16.656416 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 605.
+Total: 1.001984 ms (FindLiveObjects: 0.129380 ms CreateObjectMapping: 0.050726 ms MarkObjects: 0.768871 ms  DeleteObjects: 0.029637 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.386704 ms
+
+Unloading 97 unused Assets to reduce memory usage. Loaded Objects now: 302.
+Total: 1.011673 ms (FindLiveObjects: 0.080363 ms CreateObjectMapping: 0.039327 ms MarkObjects: 0.555707 ms  DeleteObjects: 0.333424 ms)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 3890 -> priority: 1 

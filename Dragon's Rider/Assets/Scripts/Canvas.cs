@@ -27,6 +27,11 @@ public class Canvas : MonoBehaviour {
         if (montado. Montado )
         {
             cosa.gameObject.SetActive(true);
+         
+        }
+        else
+        {
+            cosa.gameObject.SetActive(true);
         }
 
         if (muerte.Muere == false)
